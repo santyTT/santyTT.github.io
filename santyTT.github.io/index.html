@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+          <a href="#" class="name-sanly">Sanly.dev</a>
+        </div>
+        <nav id="menu">
+          <button class="nav-mobile" id="nav-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tutoriales</a></li>
+            <li><a href="#">WordPress</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="profile-card">
+        <div class="profile-header">
+            <img src="Imagenes/Sanly.jpeg" alt="Santiago castellar" class="profile-pic">
+            <h2 class="profile-name">Sanly.dev</h2>
+            <p class="profile-username">@sanly401</p>
+        </div>
+        <div class="status">
+            <span class="status-message">Quizás tarde en responder.</span>
+        </div>
+        <div class="bio">
+            <p class="bio-text">¿Que soy un pato o un pinguino?</p>
+        </div>
+        <div class="edit-profile">
+            <button class="edit-button">Editar perfil</button>
+        </div>
+        <div class="followers">
+            <span class="follower-count"><strong>1M</strong> seguidores</span> • 
+            <span class="following-count"><strong>0</strong> seguidos</span>
+        </div>
+        <div class="pinned">
+            <h4 class="pinned-title">Fijado</h4>
+            <div class="pinned-item">
+                <a href="https://santyTT.github.io" target="_blank" class="pinned-link">santyTT.github.io</a>
+                <span class="pinned-status">Público</span>
+                <span class="pinned-language">CSS</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>// JavaScript Version
+    const buttonMenu = document.querySelector('#nav-mobile');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    buttonMenu.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('nav-open');
+      navMenu.classList.toggle('open-menu');
+    });
+    
+    // jQuery Version
+    // $(function() {
+    //     var btn_movil = $(‘#nav-mobile’),
+    //     menu = $(‘#menu’).find(‘ul’);
+    
+    //     // Al dar click agregar/quitar clases que permiten el despliegue del menú
+    //     btn_movil.on(‘click’, function (e) {
+    //         e.preventDefault();
+    //         var el = $(this);
+    //         el.toggleClass(‘nav-active’);
+    //         menu.toggleClass(‘open-menu’);
+    //     });
+    // });</script>
+</html>
