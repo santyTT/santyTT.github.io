@@ -4,160 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Enlace a la hoja de estilos de AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Enlaces a hojas de estilo personalizadas -->
     <link rel="stylesheet" href="Style.css">
-    <link rel="stylesheet" href="aos.css">
-
-    <!-- Enlace al archivo JavaScript principal -->
-    <script src="main.js"></script>
-
-    <title>SNTYCG!</title>
-    <!-- Icono de la pestaña del navegador -->
-    <link rel="icon" href="Imagenes/Logo-title.png">
+    <link rel="shortcut icon" href="Imagenes/favicon.png" type="image/x-icon">
+    <title>Santy.dev</title>
 </head>
 
 <body>
-    <!-- Navegación principal -->
-     <header>
-    <div data-aos="fade-down">
-        <nav> 
-            <img src="Imagenes/Logo.png" alt="Logo">
-            <ul>
-                <!-- Enlaces a secciones con efectos de desplazamiento -->
-                <div data-aos="fade-up" data-aos-delay="600">
-                    <li><a href="#Sobre_mi">Sobre Mi</a></li>
-                </div>
-                <div data-aos="fade-down" data-aos-delay="800">
-                    <li><a href="#skills">Skills</a></li>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="1000">
-                    <li><a href="#mas">Mas</a></li>
-                </div>
+    <header class="header">
+        <a href="#" class="logo">SC</a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Footer</a></li>
             </ul>
-            <img src="Imagenes/menu.png" alt="Menu" class="menu">
+        </nav><button class="contact">CONTACT US</button>
+    </header>
+    <section>
+        <nav class="box-content">
+            <div class="colum1">
+            <h1>I SANTIAGO CASTELLAR<span class="punto">.</span></h1>
+            <h2>WEB DEVELOPER DESING</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum incidunt voluptatibus unde deserunt reprehenderit voluptas, beatae enim magnam eius officia odio fugiat fugit, harum dolores sit vero nihil deleniti?</p>
+        </div>
+        <div class="foto-inicio">
+            <img src="Imagenes/Sanly.jpeg" alt="" class="Perfil">
+        </div>
         </nav>
-    </div>
-</header>
-    <!-- Sección principal del sitio -->
-    <section id="home" class="sec-main">
-        <h1 class="main-heading">
-            <div data-aos="fade-right" data-aos-delay="100">W</div>
-            <div data-aos="fade-right" data-aos-delay="200">E</div>
-            <div data-aos="fade-right" data-aos-delay="300">L</div>
-            <div data-aos="fade-right" data-aos-delay="400">C</div>
-            <div data-aos="fade-right" data-aos-delay="500">O</div>
-            <div data-aos="fade-right" data-aos-delay="600">M</div>
-            <div data-aos="fade-right" data-aos-delay="700">E</div>
-            <br>
-        </h1>
+        <nav class="box-content-2">
+            <h1>Section</h1>
+        </nav>
+        <nav class="box-content-2">
+            <h1>Section</h1>
+        </nav>
+        <nav class="box-content-2">
+            <h1>Section</h1>
+        </nav>
+        <nav class="box-content-3">
+            <h1>Footer</h1>
+        </nav>
     </section>
-
-    <section class="divisor"></section>
-
-    <!-- Sección "Sobre Mi" -->
-    <section class="apartado_1" id="Sobre_mi">
-        <div class="section-creator">
-            <img src="Imagenes/giphy.gif" alt="Creator" class="foto_creador2">
-            <div>
-                <h2>I San<img src="Imagenes/estrella.png" alt="Star" class="icons"></h2><br>
-                <p>Soy Santiago Castellar García, un apasionado desarrollador web junior en constante aprendizaje.
-                    Actualmente, me encuentro cursando el bachillerato, etapa en la que he decidido profundizar en mi
-                    interés por la programación, una disciplina que me ha fascinado desde hace varios años.<br><br>
-                    Durante este tiempo, he adquirido conocimientos en HTML, CSS y JavaScript, herramientas clave en el
-                    desarrollo web, con especial enfoque en el Frontend. Mi objetivo es seguir creciendo en este campo,
-                    y en un futuro cercano, planeo expandir mis habilidades hacia el Backend para convertirme en un
-                    desarrollador web más completo y versátil.</p><br>
-            </div>
-        </div>
-        <img src="Imagenes/mario-kazawsky.gif" alt="GIF" class="gif-img"><br>
-    </section>
-
-    <!-- Sección de habilidades -->
-    <section class="apartado_2" id="skills">
-        <h2>Skills</h2><br>
-        <section id="skills">
-            <progress value="70" max="100"></progress><span>HTML5</span>
-            <progress value="50" max="100"></progress><span>CSS3</span>
-            <progress value="5" max="100"></progress><span>JavaScript</span>
-        </section>
-    </section>
-
-    <!-- Sección de tarjetas creativas -->
-    <section class="creative-cards style-one" id="mas">
-        <div class="container">
-            <div class="row">
-                <!-- Tarjeta de proyectos -->
-                <div class="card-column">
-                    <div class="card-details">
-                        <div class="card-icons">
-                            <img class="light-icon" src="https://imgpanda.com/upload/ib/1yIWjyG41o.png" alt="icon" />
-                        </div>
-                        <h3><a href="https://github.com/santyTT">Proyectos</a></h3>
-                        <p>En mi perfil de GitHub encontrarás proyectos enfocados en herramientas y soluciones prácticas
-                            que buscan facilitar el día a día de las personas. Cada proyecto refleja mi compromiso con
-                            la mejora continua y la innovación. ¡Explora y descubre cómo podemos crecer juntos!</p>
-                        <a class="read-more-btn" href="https://github.com/santyTT"><i
-                                class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Tarjeta "Sobre Mi" -->
-                <div class="card-column">
-                    <div class="card-details">
-                        <div class="card-icons">
-                            <img class="light-icon" src="https://imgpanda.com/upload/ib/Q4tSh2ctkH.png" alt="icon" />
-                        </div>
-                        <h3><a href="https://github.com/santyTT">Sobre Mi</a></h3>
-                        <p>Soy Santiago, fundador de SNTYCG, una plataforma dedicada a ofrecer apoyo y recursos para
-                            quienes buscan mejorar su bienestar. Mi misión es ayudar a otros a superar desafíos y
-                            alcanzar sus metas, compartiendo información útil e inspiradora. ¡Gracias por unirte a esta
-                            comunidad!</p>
-                        <a class="read-more-btn" href="https://github.com/santyTT"><i
-                                class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-
-                <!-- Tarjeta de novedades -->
-                <div class="card-column">
-                    <div class="card-details">
-                        <div class="card-icons">
-                            <img class="light-icon" src="https://imgpanda.com/upload/ib/YQdOwN6IDJ.png" alt="icon" />
-                        </div>
-                        <h3><a href="#">Muy Pronto!</a></h3>
-                        <p>¡Grandes novedades están en camino! Pronto lanzaremos nuevos recursos y herramientas
-                            diseñadas para ayudarte aún más en tu desarrollo personal y profesional. Mantente atento,
-                            estamos trabajando para ofrecerte lo mejor.</p>
-                        <a class="read-more-btn" href="#"><i class="fa-solid fa-angles-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pie de página -->
-    <footer id="footer">
-        <div class="col col1">
-            <h3><img src="Imagenes/Logo.png" alt="Logo" style="width: 200px;"></h3>
-            <p><span style="color: #BA6573;">Por San❤</span></p>
-            <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
-        </div>
-        <div class="col col2">
-            <p>About</p>
-            <p>Our mission</p>
-            <p>Privacy Policy</p>
-            <p>Terms of service</p>
-        </div>
-        <div class="backdrop"></div>
-    </footer>
-
-    <!-- Inicialización de AOS -->
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
