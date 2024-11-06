@@ -1,79 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <title>Document</title>
+    <title>Web For Bitches</title>
 </head>
+
 <body>
-    <header>
-        <div id="logo">
-          <a href="#" class="name-sanly">Sanly.dev</a>
+    <header class="header">
+        <a href="#" class="logo">SC</a>
+        <input type="checkbox" id="side-menu" class="side-menu">
+        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Me</a></li>
+                <li><a href="#">About</a></li>
+                
+            </ul>
+        </nav><button class="contact">CONTACT US</button>
+    </header>
+    <section>
+        <nav class="box-content">
+            <div class="colum1">
+            <h1>I SANTIAGO CASTELLAR<span class="punto">.</span></h1>
+            <h2>WEB DEVELOPER DESING</h2><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum incidunt voluptatibus unde deserunt reprehenderit voluptas, beatae enim magnam eius officia odio fugiat fugit, harum dolores sit vero nihil deleniti?</p>
         </div>
-        <nav id="menu">
-          <button class="nav-mobile" id="nav-mobile">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <ul class="nav-menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Tutoriales</a></li>
-            <li><a href="#">WordPress</a></li>
-          </ul>
+        <div class="foto-inicio">
+            <img src="Imagenes/Sanly.jpeg" alt="">
+        </div>
         </nav>
-      </header>
-      <div class="profile-card">
-        <div class="profile-header">
-            <img src="Imagenes/Sanly.jpeg" alt="Santiago castellar" class="profile-pic">
-            <h2 class="profile-name">Sanly.dev</h2>
-            <p class="profile-username">@sanly401</p>
-        </div>
-        <div class="status">
-            <span class="status-message">Quizás tarde en responder.</span>
-        </div>
-        <div class="bio">
-            <p class="bio-text">¿Que soy un pato o un pinguino?</p>
-        </div>
-        <div class="edit-profile">
-            <button class="edit-button">Editar perfil</button>
-        </div>
-        <div class="followers">
-            <span class="follower-count"><strong>1M</strong> seguidores</span> • 
-            <span class="following-count"><strong>0</strong> seguidos</span>
-        </div>
-        <div class="pinned">
-            <h4 class="pinned-title">Fijado</h4>
-            <div class="pinned-item">
-                <a href="https://santyTT.github.io" target="_blank" class="pinned-link">santyTT.github.io</a>
-                <span class="pinned-status">Público</span>
-                <span class="pinned-language">CSS</span>
-            </div>
-        </div>
-    </div>
-    
+        <nav class="box-content-2">
+            <h1>Section</h1>
+        </nav>
+        <nav class="box-content-3">
+            <h1>Footer</h1>
+        </nav>
+    </section>
 </body>
-<script>// JavaScript Version
-    const buttonMenu = document.querySelector('#nav-mobile');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    buttonMenu.addEventListener('click', (e) => {
-      e.currentTarget.classList.toggle('nav-open');
-      navMenu.classList.toggle('open-menu');
-    });
-    
-    // jQuery Version
-    // $(function() {
-    //     var btn_movil = $(‘#nav-mobile’),
-    //     menu = $(‘#menu’).find(‘ul’);
-    
-    //     // Al dar click agregar/quitar clases que permiten el despliegue del menú
-    //     btn_movil.on(‘click’, function (e) {
-    //         e.preventDefault();
-    //         var el = $(this);
-    //         el.toggleClass(‘nav-active’);
-    //         menu.toggleClass(‘open-menu’);
-    //     });
-    // });</script>
+
 </html>
