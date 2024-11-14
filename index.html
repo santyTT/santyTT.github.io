@@ -2,52 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <link rel="shortcut icon" href="Imagenes/favicon.png" type="image/x-icon">
-    <title>Santy.dev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Santy.dev</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">SC</a>
-        <input type="checkbox" id="side-menu" class="side-menu">
-        <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Footer</a></li>
-            </ul>
-        </nav><button class="contact">CONTACT US</button>
-    </header>
-    <section>
-        <nav class="box-content">
-            <div class="colum1">
-            <h1>I SANTIAGO CASTELLAR<span class="punto">.</span></h1>
-            <h2>WEB DEVELOPER DESING</h2><br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum incidunt voluptatibus unde deserunt reprehenderit voluptas, beatae enim magnam eius officia odio fugiat fugit, harum dolores sit vero nihil deleniti?</p>
-        </div>
-        <div class="foto-inicio">
-            <img src="Imagenes/Sanly.jpeg" alt="" class="Perfil">
-        </div>
+  <div class="color-big">
+    <!-- Menu Button -->
+    <div class="btn-menu">
+      <label for="btn-menu" class="btn-nav">☰</label>
+    </div>
+
+    <!-- Menu Checkbox -->
+    <input type="checkbox" id="btn-menu" onclick="toggleScroll()" />
+
+    <!-- Menu Container -->
+    <div class="container-menu">
+      <div class="cont-menu">
+        <nav>
+          <a href="#aboutme" class="menu-item">About Me</a>
+          <a href="#" class="menu-item">Objective</a>
+          <a href="#" class="menu-item">Suscribirse</a>
+          <a href="#" class="menu-item">Facebook</a>
+          <a href="#" class="menu-item">Youtube</a>
+          <a href="#" class="menu-item">Instagram</a>
         </nav>
-        <nav class="box-content-2">
-            <h1>Section</h1>
-        </nav>
-        <nav class="box-content-2">
-            <h1>Section</h1>
-        </nav>
-        <nav class="box-content-2">
-            <h1>Section</h1>
-        </nav>
-        <nav class="box-content-3">
-            <h1>Footer</h1>
-        </nav>
+        <label for="btn-menu" class="close-menu">x</label>
+      </div>
+    </div>
+
+    <!-- Home Section -->
+    <section class="home-section">
+      <div class="text-home">
+        <h2>Santy.dev</h2>
+        <h4>Developer web junior <i>2020 - 2024</i></h4>
+      </div>
     </section>
+  </div>
+  <!-- About Section -->
+  <section class="about-me" id="aboutme">
+    <h2>Oh Hi! 👋</h2>
+    <p>My name is Santiago Castellar, a 14-year-old front-end developer passionate about building user-friendly web
+      experiences. I’m focused on improving my skills to reach a senior level and take on more complex projects, always
+      learning and growing in the process.</p><br>
+    <h5>Building today, mastering tomorrow.</h5><br>
+
+    <center>
+      <h3> <i>Line Time ⌛</i> </h3>
+    </center>
+
+    <div class="timeline">
+      <div class="timeline__component">
+        <div class="timeline__date timeline__date--right">August 30, 2017</div>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point"></div>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">Start in development...</h2>
+        <p class="timeline__paragraph">I began to be interested in the development of web apps. I learned the most
+          basics of HTML and CSS.
+        <h6 class="time-date">15/03/2022</h6>
+        </p>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">On the way to learning Html.</h2>
+        <p class="timeline__paragraph">
+          Here I started to play only html and learn its concepts and how it related to Js and CSS, among others.
+        </p>
+        <h6 class="time-date">04/06/2023</h6>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">On the way to learning CSS.</h2>
+        <p class="timeline__paragraph">
+          This season I learned a lot of CSS, and until now I continue to learn more about its great tools and their
+          good use.
+        <h6 class="time-date">15/11/2023</h6>
+        </p>
+      </div>
+      <div class="timeline__component timeline__component--bg">
+        <h2 class="timeline__title">Learning 100% HTML AND CSS</h2>
+        <p class="timeline__paragraph">In this part I only based myself on learning both languages ​​strongly and
+          knowing how their tools work, both basic and advanced.
+        <h6 class="time-date">null/04/2024</h6>
+        </p>
+      </div>
+      <div class="timeline__component timeline__component--bottom timeline__component--bg">
+        <h2 class="timeline__title">On the way to learning JS.</h2>
+        <p class="timeline__paragraph">
+          Javascript, this programming language which I have not yet mastered even 5%, is the one that has cost me the
+          most, but I know that I will master it.
+        </p>
+        <h6 class="time-date">24/06/2024</h6>
+      </div>
+      <div class="timeline__middle">
+        <div class="timeline__point timeline__point--bottom"></div>
+      </div>
+      <div class="timeline__component timeline__component--bottom">
+        <div class="timeline__date">June 28, 2021</div>
+      </div>
+    </div>
+
+
+  </section>
+  <section>
+    <div class="divider"></div>
+  </section>
+  <section class="Objective">
+    <h2> Objective </h2>
+    <p>Lorem ipsum dolor sit consectetur adipisicing elit. Error numquam nobis, sapiente aliquid architecto
+      exercitationem saepe recusandae eligendi inventore quis illo totam consectetur deserunt ad quos repudiandae atque
+      esse! Dicta!</p>
+  </section>
+
+  <script>
+    // Function to handle scroll and menu close
+    function toggleScroll() {
+      const menuCheckbox = document.getElementById('btn-menu');
+      const menuLinks = document.querySelectorAll('.menu-item');
+
+      // Prevent scrolling if the menu is open
+      if (menuCheckbox.checked) {
+        document.body.style.overflow = 'hidden'; // Disable scroll
+      } else {
+        document.body.style.overflow = 'auto'; // Enable scroll
+      }
+      // Close the menu and scroll to section
+      menuLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();  // Prevent default anchor behavior
+
+          // Get the target section
+          const targetSection = document.querySelector(this.getAttribute('href'));
+
+          // Close the menu by unchecking the checkbox
+          menuCheckbox.checked = false;
+          document.body.style.overflow = 'auto'; // Enable scrolling again
+
+          // Scroll to the target section smoothly
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    }
+
+    // Call toggleScroll on checkbox click to handle menu behavior
+    document.getElementById('btn-menu').addEventListener('click', toggleScroll);
+  </script>
 </body>
 
 </html>
